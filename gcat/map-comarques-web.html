@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title></title>
+<link href="../visual.css" rel="stylesheet" type="text/css" />
+<script src="../lazyvisualsetup.js"></script>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+<div id="visual" class="visual"></div>
+
+<script>
+        visual(
+            {
+                lang: "ca",
+              autoheading: false,
+                geo: "Catalunya",
+                time: "2016",
+                unit: {symbol: "%"},
+                dec: 0,
+                by: "com2015",
+                type: "cmap",
+                legend: false,
+                data: [{"id":"05","val":100},{"id":"01","val":86.51},{"id":"02","val":92.22},{"id":"03","val":97.17},{"id":"04","val":100},{"id":"06","val":98.09},{"id":"07","val":98.9},{"id":"08","val":35.98},{"id":"09","val":93.47},{"id":"10","val":81.61},{"id":"11","val":87.6},{"id":"12","val":97.75},{"id":"13","val":-11.74},{"id":"14","val":89.67},{"id":"15","val":100},{"id":"16","val":90.93},{"id":"17","val":97.17},{"id":"18","val":96.2},{"id":"19","val":97.99},{"id":"20","val":8.19},{"id":"21","val":77.59},{"id":"42","val":100},{"id":"22","val":97.3},{"id":"23","val":99.05},{"id":"24","val":98.54},{"id":"25","val":100},{"id":"26","val":100},{"id":"28","val":90.47},{"id":"27","val":94.94},{"id":"29","val":80.32},{"id":"30","val":93.44},{"id":"31","val":88.3},{"id":"32","val":100},{"id":"33","val":-65.42},{"id":"34","val":96.91},{"id":"35","val":91.64},{"id":"36","val":36.62},{"id":"37","val":100},{"id":"38","val":95.88},{"id":"39","val":100},{"id":"40","val":67.48},{"id":"41","val":94.13}]
+            }
+        );
+</script>
+
+</body>
+
+</html>
