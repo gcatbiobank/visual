@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title></title>
+<link href="../visual.css" rel="stylesheet" type="text/css" />
+<script src="../lazyvisualsetup.js"></script>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+<div id="visual" class="visual"></div>
+
+<script>
+  visual(
+    {
+      lang: "ca",
+      title: "Participants que manquen per comarca respecte a un objectiu de 20.000 participants",
+      geo: "Catalunya",
+      time: "2016",
+      footer: "<a href='http://www.gcatbiobank.org/'>GCAT | Genomes for Life</a>",
+      dec: 0,
+      type: "rank",
+      time: "2016",
+      data: [["Baix Llobregat", 1879],["Vallès Occidental", 1615],["Vallès Oriental", 1011],["Maresme",  904],["Bages",  451],["Selva",  439],["Osona",  406],["Garraf",  377],["Alt Empordà",  344],["Anoia",  307],["Baix Empordà",  288],["Alt Penedès",  275],["Baix Penedès",  261],["Tarragonès",  244],["Baix Ebre",  200],["Baix Camp",  182],["Montsià",  180],["Garrotxa",  146],["Noguera",  104],["Alt Camp",  103],["Berguedà",   96],["Pla d'Urgell",   94],["Urgell",   93],["Pla de l'Estany",   76],["Ripollès",   60],["Segarra",   60],["Ribera d'Ebre",   57],["Alt Urgell",   56],["Garrigues",   51],["Conca de Barberà",   50],["Cerdanya",   48],["Gironès",   40],["Pallars Jussà",   36],["Moianès",   35],["Solsonès",   33],["Terra Alta",   32],["Val d'Aran",   27],["Priorat",   20],["Pallars Sobirà",   19],["Alta Ribagorça",   10],["Segrià", -365],["Barcelonès", -696]],
+      unit: {"label": "{label}", "symbol": "{symbol}", "position": "end"}
+    }
+  );  
+</script>
+
+</body>
+
+</html>

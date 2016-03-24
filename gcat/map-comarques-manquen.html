@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title></title>
+<link href="../visual.css" rel="stylesheet" type="text/css" />
+<script src="../lazyvisualsetup.js"></script>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+<div id="visual" class="visual"></div>
+
+<script>
+        visual(
+            {
+                lang: "ca",
+                title: "Participants que manquen per comarca respecte a un objectiu de 20.000 participants",
+                geo: "Catalunya",
+                time: "2016",
+                footer: "<a href='http://www.gcatbiobank.org/'>GCAT | Genomes for Life</a>",
+                unit: {symbol: "participants"},
+                dec: 0,
+                by: "com2015",
+                type: "cmap",
+                legend: false,
+                data: [{"id":"05","val":10},{"id":"01","val":103},{"id":"02","val":344},{"id":"03","val":275},{"id":"04","val":56},{"id":"06","val":307},{"id":"07","val":451},{"id":"08","val":182},{"id":"09","val":200},{"id":"10","val":288},{"id":"11","val":1879},{"id":"12","val":261},{"id":"13","val":-696},{"id":"14","val":96},{"id":"15","val":48},{"id":"16","val":50},{"id":"17","val":377},{"id":"18","val":51},{"id":"19","val":146},{"id":"20","val":40},{"id":"21","val":904},{"id":"42","val":35},{"id":"22","val":180},{"id":"23","val":104},{"id":"24","val":406},{"id":"25","val":36},{"id":"26","val":19},{"id":"28","val":76},{"id":"27","val":94},{"id":"29","val":20},{"id":"30","val":57},{"id":"31","val":60},{"id":"32","val":60},{"id":"33","val":-365},{"id":"34","val":439},{"id":"35","val":33},{"id":"36","val":244},{"id":"37","val":32},{"id":"38","val":93},{"id":"39","val":27},{"id":"40","val":1615},{"id":"41","val":1011}]
+            }
+        );
+</script>
+
+</body>
+
+</html>

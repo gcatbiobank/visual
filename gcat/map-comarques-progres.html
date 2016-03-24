@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title></title>
+<link href="../visual.css" rel="stylesheet" type="text/css" />
+<script src="../lazyvisualsetup.js"></script>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+<div id="visual" class="visual"></div>
+
+<script>
+        visual(
+            {
+                lang: "ca",
+                title: "Representació proporcional per comarca respecte a un objectiu de 20.000 participants",
+                geo: "Catalunya",
+                time: "2016",
+                footer: "<a href='http://www.gcatbiobank.org/'>GCAT | Genomes for Life</a>",
+                unit: {symbol: "%"},
+                dec: 0,
+                by: "com2015",
+                type: "cmap",
+                legend: false,
+                data: [{"id":"05","val":0},{"id":"01","val":13.49},{"id":"02","val":7.78},{"id":"03","val":2.83},{"id":"04","val":0},{"id":"06","val":1.91},{"id":"07","val":1.1},{"id":"08","val":64.02},{"id":"09","val":6.53},{"id":"10","val":18.39},{"id":"11","val":12.4},{"id":"12","val":2.25},{"id":"13","val":111.74},{"id":"14","val":10.33},{"id":"15","val":0},{"id":"16","val":9.07},{"id":"17","val":2.83},{"id":"18","val":3.8},{"id":"19","val":2.01},{"id":"20","val":91.81},{"id":"21","val":22.41},{"id":"42","val":0},{"id":"22","val":2.7},{"id":"23","val":0.95},{"id":"24","val":1.46},{"id":"25","val":0},{"id":"26","val":0},{"id":"28","val":9.53},{"id":"27","val":5.06},{"id":"29","val":19.68},{"id":"30","val":6.56},{"id":"31","val":11.7},{"id":"32","val":0},{"id":"33","val":165.42},{"id":"34","val":3.09},{"id":"35","val":8.36},{"id":"36","val":63.38},{"id":"37","val":0},{"id":"38","val":4.12},{"id":"39","val":0},{"id":"40","val":32.52},{"id":"41","val":5.87}]
+            }
+        );
+</script>
+
+</body>
+
+</html>

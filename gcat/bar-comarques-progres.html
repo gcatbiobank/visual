@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title></title>
+<link href="../visual.css" rel="stylesheet" type="text/css" />
+<script src="../lazyvisualsetup.js"></script>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+<div id="visual" class="visual"></div>
+
+<script>
+  visual(
+    {
+            lang: "ca",
+            title: "Representació proporcional per comarca respecte a un objectiu de 20.000 participants",
+            geo: "Catalunya",
+            time: "2016",
+            footer: "<a href='http://www.gcatbiobank.org/'>GCAT | Genomes for Life</a>",
+      dec: 0,
+      type: "rank",
+      time: "2016",
+      data: [["Segrià", 165.42],["Barcelonès", 111.74],["Gironès",  91.81],["Baix Camp",  64.02],["Tarragonès",  63.38],["Vallès Occidental",  32.52],["Maresme",  22.41],["Priorat",  19.68],["Baix Empordà",  18.39],["Alt Camp",  13.49],["Baix Llobregat",  12.40],["Ripollès",  11.70],["Berguedà",  10.33],["Pla de l'Estany",   9.53],["Conca de Barberà",   9.07],["Solsonès",   8.36],["Alt Empordà",   7.78],["Ribera d'Ebre",   6.56],["Baix Ebre",   6.53],["Vallès Oriental",   5.87],["Pla d'Urgell",   5.06],["Urgell",   4.12],["Garrigues",   3.80],["Selva",   3.09],["Alt Penedès",   2.83],["Garraf",   2.83],["Montsià",   2.70],["Baix Penedès",   2.25],["Garrotxa",   2.01],["Anoia",   1.91],["Osona",   1.46],["Bages",   1.10],["Noguera",   0.95],["Alta Ribagorça",   0.00],["Alt Urgell",   0.00],["Cerdanya",   0.00],["Moianès",   0.00],["Pallars Jussà",   0.00],["Pallars Sobirà",   0.00],["Segarra",   0.00],["Terra Alta",   0.00],["Val d'Aran",   0.00]],
+      unit: {"label": "{label}", "symbol": "{symbol}", "position": "end"}
+    }
+  );  
+</script>
+
+</body>
+
+</html>

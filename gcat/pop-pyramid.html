@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title></title>
+<link href="../visual.css" rel="stylesheet" type="text/css" />
+<script src="../lazyvisualsetup.js"></script>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+<div id="visual" class="visual"></div>
+
+<script>
+            visual(
+                {
+                    lang: "ca",
+                    title: "Participants per sexe i edat",
+                    geo: "GCAT",
+                    time: "2016",
+                    footer: "<a href='http://www.gcatbiobank.org/'>GCAT | Genomes for Life</a>",
+                    unit: {label: "participants"},
+                    dec: 0,
+                    type: "pyram",
+                    by: [39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66],
+                    data: [
+                        { label: "Homes", val: [1, 165, 150, 170, 173, 171, 176, 182, 186, 220, 212, 238, 201, 197, 167, 169, 159, 169, 149, 142, 120, 153, 121, 100, 121, 100, 88, 1]},
+                        { label: "Dones", val: [0, 255, 242, 281, 255, 240, 280, 270, 293, 295, 293, 300, 296, 291, 295, 244, 218, 235, 196, 223, 187, 183, 174, 138, 144, 144, 127, 5]}
+                    ]
+                }
+            );
+</script>
+
+</body>
+
+</html>
