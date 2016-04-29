@@ -1,0 +1,1 @@
+rsync -azP gcat xduran@locke:/data/apache/htdocs/groups/dnalab/visual
