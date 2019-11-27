@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title></title>
+<link href="../visual.css" rel="stylesheet" type="text/css" />
+<script src="../lazyvisualsetup.js"></script>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="visual" class="visual"></div>
+<script>
+		visual(
+			{
+				lang: "ca",
+				title: "Origen dels participants per comarca", 
+				geo: "Catalunya",
+				time: "2019",
+				unit: {symbol: "participants"},
+				dec: 0,
+				by: "com2015",
+				type: "cmap",
+				legend: false,
+				data: 
+[{id:01,val:39},{id:02,val:71},{id:03,val:27},{id:04,val:19},{id:05,val:476},{id:06,val:134},{id:07,val:108},{id:08,val:34},{id:09,val:1},{id:10,val:10},{id:11,val:28},{id:12,val:49},{id:13,val:48},{id:14,val:374},{id:15,val:35},{id:16,val:72},{id:17,val:1},{id:18,val:54},{id:19,val:20},{id:20,val:48},{id:21,val:43},{id:22,val:16},{id:23,val:30},{id:24,val:35},{id:25,val:18},{id:26,val:1051},{id:27,val:105},{id:28,val:5},{id:29,val:476},{id:30,val:17},{id:31,val:53},{id:32,val:11}]
+			}
+		);
+</script>
+
+</body>
+
+</html>
