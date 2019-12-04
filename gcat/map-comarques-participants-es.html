@@ -1,7 +1,48 @@
-[{id:01,val:29},{id:02,val:56},{id:03,val:5},{id:04,val:731},{id:05,val:125},{id:06,val:221},{id:07,val:42},{id:08,val:1},{id:09,val:8},{id:10,val:13},{id:11,val:37},{id:12,val:517},{id:13,val:20},{id:14,val:11},{id:15,val:1},{id:16,val:2},{id:17,val:15},{id:18,val:73},{id:19,val:12},{id:20,val:8},{id:21,val:18},{id:22,val:5},{id:23,val:1472},{id:24,val:172},{id:25,val:2},{id:26,val:792},{id:27,val:2},{id:28,val:8}]
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-			}
-		);
+<title></title>
+<link href="../visual.css" rel="stylesheet" type="text/css" />
+<script src="../lazyvisualsetup.js"></script>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+<div id="visual" class="visual"></div>
+
+<script>
+        visual(
+            {
+                lang: "es",
+                title: "Comarca de residencia de los participantes GCAT. Representación proporcional respecto objectivo final",
+                unit: {symbol: "%"},
+                dec: 0,
+                by: "com2015",
+                type: "cmap",
+                legend: false,
+                data: [{"id":"01","val":24.46},{"id":"02","val":13.67},{"id":"03","val":84.91},{"id":"04","val":7.2},{"id":"05","val":0},{"id":"06","val":33.5},{"id":"07","val":6.14},{"id":"08","val":144.65},{"id":"09","val":55.01},{"id":"10","val":82.61},{"id":"11","val":32.69},{"id":"12","val":18.37},{"id":"13","val":180.12},{"id":"14","val":46.95},{"id":"15","val":0},{"id":"16","val":14.51},{"id":"17","val":47.16},{"id":"18","val":24.73},{"id":"19","val":26.17},{"id":"20","val":102.58},{"id":"21","val":47.73},{"id":"42","val":14.4},{"id":"22","val":11.34},{"id":"23","val":9.55},{"id":"24","val":7.52},{"id":"25","val":2.78},{"id":"26","val":10.41},{"id":"27","val":15.19},{"id":"28","val":90.55},{"id":"29","val":59.05},{"id":"30","val":13.12},{"id":"31","val":35.11},{"id":"32","val":13.24},{"id":"33","val":267.93},{"id":"34","val":38.42},{"id":"35","val":16.71},{"id":"36","val":125.26},{"id":"37","val":0},{"id":"38","val":9.26},{"id":"39","val":0},{"id":"40","val":70.3},{"id":"41","val":31.48}]
+            }
+        );
 </script>
 
 </body>
