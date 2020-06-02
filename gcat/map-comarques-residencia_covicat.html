@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title></title>
+<link href="../visual.css" rel="stylesheet" type="text/css" />
+<script src="../lazyvisualsetup.js"></script>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="visual" class="visual"></div>
+<script>
+		visual(
+			{
+				lang: "ca",
+				title: "Participants COVICAT per comarca de residència", 
+				geo: "Catalunya",
+				time: "2019",
+				unit: {symbol: "participants"},
+				dec: 0,
+				by: "com2015",
+				type: "cmap",
+				legend: false,
+				data: 
+[{"id":"01","val":9},{"id":"02","val":7},{"id":"03","val":71},{"id":"04","val":3},{"id":"06","val":29},{"id":"07","val":31},{"id":"08","val":143},{"id":"09","val":26},{"id":"10","val":45},{"id":"11","val":183},{"id":"12","val":12},{"id":"13","val":2959},{"id":"14","val":8},{"id":"17","val":78},{"id":"18","val":1},{"id":"19","val":11},{"id":"20","val":130},{"id":"21","val":186},{"id":"22","val":6},{"id":"23","val":3},{"id":"24","val":13},{"id":"25","val":1},{"id":"27","val":2},{"id":"28","val":27},{"id":"29","val":6},{"id":"30","val":2},{"id":"31","val":6},{"id":"32","val":2},{"id":"33","val":388},{"id":"34","val":47},{"id":"35","val":1},{"id":"36","val":194},{"id":"40","val":520},{"id":"41","val":154},{"id":"42","val":1}] 
+			}
+		);
+</script>
+
+</body>
+
+</html>
