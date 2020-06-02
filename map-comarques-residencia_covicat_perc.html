@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title></title>
+<link href="../visual.css" rel="stylesheet" type="text/css" />
+<script src="../lazyvisualsetup.js"></script>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<div id="visual" class="visual"></div>
+<script>
+		visual(
+			{
+				lang: "ca",
+				title: "Percentatge de participants que han realitzat l'enquesta COVICAT", 
+				geo: "Catalunya",
+				time: "2019",
+				unit: {symbol: "%"},
+				dec: 0,
+				by: "com2015",
+				type: "cmap",
+				legend: false,
+				data: 
+[{"id":"01","val":31},{"id":"02","val":17},{"id":"03","val":30},{"id":"04","val":60},{"id":"06","val":28},{"id":"07","val":41},{"id":"08","val":20},{"id":"09","val":21},{"id":"10","val":21},{"id":"11","val":26},{"id":"12","val":29},{"id":"13","val":28},{"id":"14","val":21},{"id":"17","val":43},{"id":"18","val":8},{"id":"19","val":31},{"id":"20","val":26},{"id":"21","val":34},{"id":"22","val":30},{"id":"23","val":27},{"id":"24","val":46},{"id":"25","val":100},{"id":"27","val":13},{"id":"28","val":37},{"id":"29","val":60},{"id":"30","val":25},{"id":"31","val":33},{"id":"32","val":40},{"id":"33","val":27},{"id":"34","val":27},{"id":"35","val":50},{"id":"36","val":25},{"id":"40","val":30},{"id":"41","val":39},{"id":"42","val":33}] 
+			}
+		);
+</script>
+
+</body>
+
+</html>
