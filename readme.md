@@ -1,6 +1,6 @@
-**Visual** is a Javascript library for data visualization developed by the **Statistical Institute of Catalonia ([Idescat](http://www.idescat.cat/en/))**. It is based on popular open source solutions. **Visual** offers a simple interface that encapsulates the complexity of these solutions for the most common chart types.
+**Visual** is a Javascript library for data visualization developed by the **Statistical Institute of Catalonia ([Idescat](https://www.idescat.cat/en/))**. It is based on popular open source solutions. **Visual** offers a simple interface that encapsulates the complexity of these solutions for the most common chart types.
 
-**Not a web developer?** Don't worry: you can try Visual online by simply filling in fields in the [Visual Maker](http://idescat.github.io/visual/).
+**Not a web developer?** Don't worry: you can try Visual online by simply filling in fields in the [Visual Maker](https://idescat.github.io/visual/).
 
 * [Supported visualizations](#supported-visualizations)
 * [Test](#test)
@@ -26,7 +26,7 @@
 
 # Test
 
-Download the [full source and tests](https://github.com/idescat/visual/archive/master.zip) and then start your browser and try the examples in the [test folder](https://github.com/idescat/visual/tree/master/test). Or play with the [Visual Viewer](https://github.com/idescat/visual/tree/master/viewer/index.html) included in the package. Or build your own charts and store them online with the [Visual Maker](http://idescat.github.io/visual/).
+Download the [full source and tests](https://github.com/idescat/visual/archive/master.zip) and then start your browser and try the examples in the [test folder](https://github.com/idescat/visual/tree/master/test). Or play with the [Visual Viewer](https://github.com/idescat/visual/tree/master/viewer/index.html) included in the package. Or build your own charts and store them online with the [Visual Maker](https://idescat.github.io/visual/).
 
 # Configuration
 
@@ -36,7 +36,7 @@ Edit [visual.setup.js](https://github.com/idescat/visual/blob/master/visual.setu
 
 **Visual** allows three running modes: **webpage** (recommended), **simple** and **manual**. See the examples in the [test folder](https://github.com/idescat/visual/tree/master/test).
 
-**Not ready to install?**  You can try Visual online: visit the [Visual Maker](http://idescat.github.io/visual/).
+**Not ready to install?**  You can try Visual online: visit the [Visual Maker](https://idescat.github.io/visual/).
 
 ### Webpage mode
 
@@ -515,7 +515,7 @@ A map is a UTF-8 Javascript file that adds a new property (the name of the map) 
 
 #### GeoJSON properties: features
 
-Geographic information must be provided in the [GeoJSON](http://geojson.org) format: it must be a feature collection object (a GeoJSON object with the type "FeatureCollection"). Simply copy the *features* property of the GeoJSON object into the Visual map object.
+Geographic information must be provided in the [GeoJSON](https://geojson.org) format: it must be a feature collection object (a GeoJSON object with the type "FeatureCollection"). Simply copy the *features* property of the GeoJSON object into the Visual map object.
 
 #### Projection properties: projection, scale, center
 
@@ -580,7 +580,7 @@ Examples:  [adv-01.html](https://github.com/idescat/visual/blob/master/test/adv-
 In [simple mode](simple-mode), this function is used to embed visualizations. It accepts two arguments: a [Visual Object](#the-visual-object) and a string (a CSS file address or CSS rules). If the Visual Object contains a [callback](#callback) property, it will be ignored.
 
 ```js
-VisualJS.iframe( {...} , "http://mydomain/path/iframe.css" );
+VisualJS.iframe( {...} , "https://mydomain/path/iframe.css" );
 ```
 
 Example: [simple.html](https://github.com/idescat/visual/blob/master/test/simple.html).
@@ -608,9 +608,9 @@ Example:  [adv-04.html](https://github.com/idescat/visual/blob/master/test/adv-0
 **Visual** uses the following libraries internally:
 
 * [LazyLoad](https://github.com/rgrove/lazyload/)
-* [D3](http://d3js.org)
-* [jQuery](http://jquery.com/), required by Flot
-* [Flot](http://www.flotcharts.org) ([stack](https://github.com/flot/flot/blob/master/jquery.flot.stack.js), [categories](https://github.com/flot/flot/blob/master/jquery.flot.categories.js)), [Flot orderBars](http://en.benjaminbuffet.com/labs/flot/), [Flot Pyramid](https://github.com/asis/flot-pyramid)
+* [D3](https://d3js.org)
+* [jQuery](https://jquery.com/), required by Flot
+* [Flot](https://www.flotcharts.org) ([stack](https://github.com/flot/flot/blob/master/jquery.flot.stack.js), [categories](https://github.com/flot/flot/blob/master/jquery.flot.categories.js)), [Flot orderBars](https://en.benjaminbuffet.com/labs/flot/), [Flot Pyramid](https://github.com/asis/flot-pyramid)
 * [ExplorerCanvas](https://code.google.com/p/explorercanvas/)
 
 These libraries are only loaded when needed.
@@ -619,7 +619,7 @@ For convenience, they are included in the [lib folder](https://github.com/idesca
 
 # Known limitations
 
-[D3](http://d3js.org) requires a modern browser (versions of Internet Explorer prior to 9 are not supported). **Visual** uses D3 only for choropleth maps (chart type: "cmap").
+[D3](https://d3js.org) requires a modern browser (versions of Internet Explorer prior to 9 are not supported). **Visual** uses D3 only for choropleth maps (chart type: "cmap").
 
 The non-stacked time series chart supports a maximum of three series. This is not a technical limitation but a visual one.
 
